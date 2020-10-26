@@ -125,6 +125,8 @@ def game():
         elif choice == 's':
             while total(dealer_hand) < 17:
                 hit(dealer_hand)
+                print("The dealer is showing a " + str(dealer_hand[0]))
+                print("You have a " + str(player_hand) + " for a total of " + str(total(player_hand)))
             score(dealer_hand, player_hand)
             play_again()
         elif choice == 'q':
