@@ -1,0 +1,1 @@
+print(open('pen_gwyn_greatest_hits.mid','rb').read()[273:604:10])

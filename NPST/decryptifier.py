@@ -1,6 +1,3 @@
-# def flag(relevant_tekst):
-#     return "".join("0123456789abcdef"[ord(a) % 16] for a in (relevant_tekst * 16)[:16])
-
 def decrypt():
     a_string = "JgkJqPåGtFgvLwnKilgp"
     alphabet =["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","æ","ø","å"]
@@ -26,5 +23,13 @@ if __name__ == "__main__":
     decrypt()
 
 #Better solution
+# import string
+# 
+# for letter in "RUV{JgkJqPåGtFgvLwnKilgp}":
+#     if letter in string.ascii_letters:
+#         print(chr(ord(letter)-2), end="")
+#     else:
+#         print(letter, end="")
 
+#Better better solution
 # "".join([chr(ord(a)-2) if a in __import__("string").ascii_letters else a for a in "RUV{JgkJqPåGtFgvLwnKilgp}"])
