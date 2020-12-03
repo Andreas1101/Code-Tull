@@ -24,3 +24,7 @@ def decrypt():
 
 if __name__ == "__main__":
     decrypt()
+
+#Better solution
+
+# "".join([chr(ord(a)-2) if a in __import__("string").ascii_letters else a for a in "RUV{JgkJqPåGtFgvLwnKilgp}"])
