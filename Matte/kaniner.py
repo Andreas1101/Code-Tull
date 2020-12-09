@@ -25,5 +25,27 @@ def diff2():
             n = n + 1
             count = count + 1
 
+def diff_robin():
+    
+    r = 1.0
+
+    for i in range(2, 11):
+        r = r + 1.0
+        count = 0
+        n = 1
+
+        x = 0.0001     # x_0 starting value
+
+        print("r = {}\tx_0 = {}".format(r, x))
+        print("___________________________________")
+        while count < 10:
+            x = r*x*(1-x)
+            print("x{}\t=\t{}".format(n, x))
+            
+            n = n + 1
+            count = count + 1
+        print("")
+
+
 if __name__ == "__main__":
     diff2()
