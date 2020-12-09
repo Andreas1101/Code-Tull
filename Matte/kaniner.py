@@ -34,9 +34,9 @@ def diff_robin():
         count = 0
         n = 1
 
-        x = 0.0001     # x_0 starting value
+        x = 0.77    # x_0 starting value
 
-        print("r = {}\tx_0 = {}".format(r, x))
+        print("r = {}\t\tx_0 = {}".format(r, x))
         print("___________________________________")
         while count < 10:
             x = r*x*(1-x)
@@ -48,4 +48,4 @@ def diff_robin():
 
 
 if __name__ == "__main__":
-    diff2()
+    diff_robin()
