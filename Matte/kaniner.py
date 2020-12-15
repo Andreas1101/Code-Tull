@@ -25,7 +25,7 @@ def diff2():
             n = n + 1
             count = count + 1
 
-# Oppgave 3 c)
+# Oppgave 3 e)
 def diff_robin():
     
     r = 1.0
