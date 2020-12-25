@@ -1,0 +1,28 @@
+
+; Første byte med føde er et tall N som representerer
+; antallet påfølgende bytes med føde.
+; Beregn summen av de N påfølgende tallene,
+; og gi resultatet som oppgulp.
+
+; Lykke til!
+
+
+LES r0
+SETT r15, 0
+SETT r14, 1
+
+LES r1
+PLUSS r15, r14
+LIK r0, r15
+BHOPP ferdig
+
+loop:
+LES r2
+PLUSS r15, r14
+PLUSS r1, r2
+SE r0, r15
+BHOPP loop
+
+
+ferdig:
+SKRIV r1

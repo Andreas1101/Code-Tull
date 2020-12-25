@@ -1,0 +1,37 @@
+
+; Skriv ut strengen "Hello, World!\n"
+
+; Tips: 
+; - Du kan velge om oppgulp skal vise ASCII- eller hex-verdier
+; - Det enkle er ofte det beste
+
+; Lykke til!
+
+SETT r0, 0x48 ;H
+SETT r1, 0x65 ;e
+SETT r2, 0x6C ;l
+SETT r3, 0x6F ;o
+SETT r4, 0x2C ;,
+SETT r11, 0x20 ;Space
+SETT r5, 0x57 ;W
+SETT r6, 0x72 ;r
+SETT r7, 0x64 ;d
+SETT r8, 0x21 ;!
+SETT r9, 0x0A ;\n
+
+SKRIV r0
+SKRIV r1
+SKRIV r2
+SKRIV r2
+SKRIV r3
+SKRIV r4
+SKRIV r11
+SKRIV r5
+SKRIV r3
+SKRIV r6
+SKRIV r2
+SKRIV r7
+SKRIV r8
+SKRIV r9
+STOPP
+
