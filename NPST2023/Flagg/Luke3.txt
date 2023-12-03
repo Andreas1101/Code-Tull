@@ -1,0 +1,4 @@
+Dekryptering. Finne IV og Nøkkel skjult i word dokumentet.
+Burde brukt cyberchef
+
+KRIPOS{Husk å se etter spor i snøen!}
