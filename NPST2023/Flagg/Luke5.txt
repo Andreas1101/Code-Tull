@@ -1,0 +1,21 @@
+Brukte denne spørringen i turbo overpass:
+[out:json][timeout:25];
+// Finner sjømatbutikker i det spesifiserte området
+(
+  node["shop"="seafood"]({{bbox}});
+  way["shop"="seafood"]({{bbox}});
+  relation["shop"="seafood"]({{bbox}});
+)->.seafoodShops;
+
+// Finner begravelsesbyråer innenfor en radius på 10 meter fra sjømatbutikkene
+(
+  node(around.seafoodShops:10)["shop"="funeral_directors"];
+  way(around.seafoodShops:10)["shop"="funeral_directors"];
+  relation(around.seafoodShops:10)["shop"="funeral_directors"];
+);
+out body;
+>;
+out skel qt;
+
+
+Flagg:PST{FROGN BIBLIOTEK}
